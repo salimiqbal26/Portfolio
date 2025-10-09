@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Portfolio</title>
-  <meta name="description" content="Portfolio — Projects, skills and contact." />
+  <title>Salim Iqbal — Portfolio</title>
+  <meta name="description" content="Salim Iqbal — Power BI Developer. Projects, skills and contact." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{--bg:#f6f8fb;--card:#ffffff;--muted:#6b7280;--accent:#0ea5a4;--maxw:980px}
@@ -25,13 +25,9 @@
     .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
     .proj{padding:12px;border-radius:8px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid rgba(15,23,36,0.03)}
     footer{text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
-    /* Carousel */
-    .slider{position:relative}
-    .slides{display:flex;gap:12px;overflow:hidden}
-    .slide{min-width:100%;flex-shrink:0}
-    .controls{position:absolute;top:50%;transform:translateY(-50%);width:100%;display:flex;justify-content:space-between;pointer-events:none}
-    .controls button{pointer-events:auto;background:rgba(255,255,255,0.9);border:1px solid rgba(15,23,36,0.06);padding:8px;border-radius:8px}
     @media (max-width:820px){.hero{grid-template-columns:1fr}.brand{font-size:16px}nav a{display:none}}
+    label{display:block;margin-top:8px;font-size:14px}
+    input,textarea{font-family:inherit}
   </style>
 </head>
 <body>
@@ -53,69 +49,49 @@
       <!-- Hero -->
       <section id="home" class="hero card" aria-label="hero">
         <div class="intro">
-          <h1 id="hero-name">Hello — I’m <strong id="name">Salim Iqbal</strong></h1>
-          <p id="hero-role">Data Analyst & Power BI Developer | SQL | Excel | Python</p>
+          <h1 id="hero-name">Hello — I’m <strong id="hero-fullname">Salim Muhammad Iqbal</strong></h1>
+          <p id="hero-role">Power BI Developer | SQL | Python | Data Visualization</p>
           <div style="margin-top:8px">
-            <a class="btn" id="https://github.com/salimiqbal26/Portfolio/blob/main/Salim_RESUME%20(1).pdf" href="#" target="_blank">Download Resume</a>
+            <!-- Resume file name: keep exactly as committed or update href -->
+            <a class="btn" id="resume-link" href="Salim_RESUME%20(1).pdf" target="_blank" rel="noopener">Download Resume</a>
             <a class="btn" href="#contact" style="background:#e5eef0;color:#064">Contact</a>
           </div>
 
           <section id="about" style="margin-top:18px">
             <h2>About Me</h2>
-            <p id="about-text" style="color:var(--muted)">Ready to geek out over analytics? Dive into my story!
-
-Hi, I'm Salim Muhammad Iqbal, a highly motivated and detail-oriented Data Analyst with a strong background in data analysis and visualization. Completed graduation from Dha Suffa University and gained hands-on experience through various internships.
-
-Currently pursuing a diploma in Data Science and Machine Learning from Techma Zone. Working as a Research Analyst at Silverlight, where I develop insightful dashboards and stay updated on the latest tech trends.
-
-Passionate about exploring new technologies and collaborating on innovative projects. Let's connect for exciting opportunities and freelance projects!.</p>
+            <p id="about-text" style="color:var(--muted)">
+              Data and a touch of creativity — I build dashboards, automate reports, and turn data into decisions. Computer Science graduate with hands-on Power BI, SQL, Python and visualization experience.
+            </p>
           </section>
 
           <section id="experience" style="margin-top:12px">
             <h2>Experience</h2>
             <div class="card" style="margin-top:8px">
-              <h4>Power BI Developer - Silverlight Research Expert Network</h4>
-              <p style="color:var(--muted);margin:6px 0">Karachi, Pakistan (Remote) | Jun 2024 – Present</p>
+              <h4>Power BI Developer — Silverlight Research Expert Network</h4>
+              <p style="color:var(--muted);margin:6px 0">Jun 2024 – Present</p>
               <ul style="margin:0 0 0 18px;color:var(--muted)">
-                <li>Clean and pre-process large datasets to ensure accuracy and consistency for reliable analysis.</li>
-                <li>Develop interactive Power BI dashboards for real-time data visualization and performance monitoring.</li>
-                <li>Translate complex data into actionable insights, supporting strategic decision-making processes.</li>
-                <li>Collaborate with cross-functional teams to deliver customized data solutions and business intelligence
- reports.</li>
+                <li>Delivered dashboards and predictive analysis for clients.</li>
+                <li>Produced insights and visual reports for stakeholders.</li>
               </ul>
             </div>
 
-                        <div class="card" style="margin-top:8px">
-              <h4>Job Simulation on Forage – PwC Switzerland</h4>
-              <p style="color:var(--muted);margin:6px 0">Karachi, Pakistan (Remote) | March 2024 – April 2024</p>
+            <div class="card" style="margin-top:8px">
+              <h4>Power BI Developer — PwC (Internship)</h4>
+              <p style="color:var(--muted);margin:6px 0">Mar 2024 – Apr 2024</p>
               <ul style="margin:0 0 0 18px;color:var(--muted)">
-                <li>Demonstrated expertise in data visualization through the creation of Power BI
-   Dashboards that effectively conveyed KPIs, showcasing the ability to respond
-   to client requests with well-designed solutions.</li>
-                <li>Strong communication skills reflected in the concise and informative email
-  Communication with engagement partners, delivering valuable insights and
-  Actionable suggestions based on data analysis.</li>
-                <li>Leveraged analytical problem-solving skills to examine HR data, particularly
-   focusing on gender-related KPIs, and identified root causes for gender
-   balance issues at the executive management level, highlighting a commitment
-   to data-driven decision-making..</li>
+                <li>Completed job simulation; built dashboards and applied DAX for KPIs.</li>
               </ul>
             </div>
-            
-          
           </section>
 
           <section id="skills" style="margin-top:14px">
             <h2>Skills</h2>
             <div class="skills card" style="margin-top:8px">
               <div class="skill"><strong>Power BI</strong>
-                <div class="bar" aria-hidden><i style="width:80%"></i></div>
-              </div>
-              <div class="skill"><strong>Excel</strong>
-                <div class="bar" aria-hidden><i style="width:80%"></i></div>
+                <div class="bar" aria-hidden><i style="width:85%"></i></div>
               </div>
               <div class="skill"><strong>SQL</strong>
-                <div class="bar" aria-hidden><i style="width:70%"></i></div>
+                <div class="bar" aria-hidden><i style="width:80%"></i></div>
               </div>
               <div class="skill"><strong>Python</strong>
                 <div class="bar" aria-hidden><i style="width:70%"></i></div>
@@ -126,12 +102,19 @@ Passionate about exploring new technologies and collaborating on innovative proj
 
         <aside>
           <div style="text-align:center;margin-bottom:10px">
-            <img id="profile-photo" src="https://github.com/salimiqbal26/Portfolio/blob/main/IMG-20240126-WA0019.jpg" alt="Profile photo" style="border-radius:12px;width:100%;height:auto;display:block" />
+            <!-- Use the actual uploaded filename in the repo root -->
+            <img id="profile-photo" src="IMG-20240126-WA0019.jpg" alt="Profile photo - Salim Iqbal" style="border-radius:12px;width:100%;height:auto;display:block" />
           </div>
           <div class="card">
             <strong>Contact</strong>
-            <p style="color:var(--muted);margin:8px 0">Email: <a id="contact-email" href="mailto:salimiqbal567@gmail.com">salimiqbal567@gmail.com</a></p>
-            <p style="margin:6px 0"><a id="https://github.com/salimiqbal26" href="#" target="_blank">GitHub</a> · <a id="https://www.linkedin.com/in/salim-iqbal-13b78623a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" href="#" target="_blank">LinkedIn</a></p>
+            <p style="color:var(--muted);margin:8px 0">
+              Email: <a href="mailto:salimiqbal567@gmail.com">salimiqbal567@gmail.com</a><br/>
+              Phone: <span style="color:var(--muted)">0315-4698486</span>
+            </p>
+            <p style="margin:6px 0">
+              <a id="github-link" href="https://github.com/salimiqbal26" target="_blank" rel="noopener">GitHub</a> ·
+              <a id="linkedin-link" href="https://www.linkedin.com/in/salim-iqbal-13b78623a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn</a>
+            </p>
           </div>
         </aside>
       </section>
@@ -140,18 +123,8 @@ Passionate about exploring new technologies and collaborating on innovative proj
       <section id="achievements" style="margin-top:18px">
         <h2>Achievements</h2>
         <div class="card" style="padding:12px">
-          <h4> Master Microsoft Power BI — 2025</h4>
-          <p style="color:var(--muted)">Data Analytics · Data Cleaning · DAX · Data Visualization · Power BI Dashboard.</p>
-        </div>
-
-                <div class="card" style="padding:12px">
-          <h4> Data Analysis Using Python — 2025</h4>
-          <p style="color:var(--muted)">Data Analysis · Data Cleaning · Data Manipulation · Data Wrangling · Probability & Statistical Thinking.</p>
-        </div>
-
-                        <div class="card" style="padding:12px">
-          <h4> Data Analyst Bootcamp — 2023</h4>
-          <p style="color:var(--muted)">Microsoft Excel · Microsoft Power BI · SQL · Python · Buisness Development.</p>
+          <h4>Master in Power BI — Alison</h4>
+          <p style="color:var(--muted)">Completed advanced Power BI coursework in modeling, DAX and dashboarding.</p>
         </div>
       </section>
 
@@ -160,12 +133,12 @@ Passionate about exploring new technologies and collaborating on innovative proj
         <h2>Projects</h2>
         <div class="projects">
           <div class="proj">
-            <h4>Customer Churn Analysis Call Center</h4>
-            <p style="color:var(--muted)">Predictive analysis & dashboarding. <a href="#" target="_blank">View on GitHub</a></p>
+            <h4>Coca Cola Customer Analytics</h4>
+            <p style="color:var(--muted)">Predictive analysis & dashboarding. <a href="#" target="_blank" rel="noopener">View on GitHub</a></p>
           </div>
           <div class="proj">
-            <h4>KPIs Dashboard</h4>
-            <p style="color:var(--muted)">Provides key insights into workforce trends for FY20.<a href="#" target="_blank">Live demo</a></p>
+            <h4>Retail Operations BI</h4>
+            <p style="color:var(--muted)">ETL, modeling & dashboards. <a href="#" target="_blank" rel="noopener">Live demo</a></p>
           </div>
         </div>
       </section>
@@ -193,14 +166,14 @@ Passionate about exploring new technologies and collaborating on innovative proj
         </form>
 
         <div style="margin-top:12px;color:var(--muted)">
-          <p><strong>Email:</strong> <a href="salimiqbal567@gmail.com">you@example.com</a></p>
-          <p><strong>LinkedIn:</strong> <a href="#">https://www.linkedin.com/in/salim-iqbal-13b78623a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</a> · <strong>GitHub:</strong> <a href="#">https://github.com/salimiqbal26</a></p>
+          <p><strong>Email:</strong> <a href="mailto:salimiqbal567@gmail.com">salimiqbal567@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/salim-iqbal-13b78623a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">LinkedIn</a> · <strong>GitHub:</strong> <a href="https://github.com/salimiqbal26" target="_blank" rel="noopener">GitHub</a></p>
         </div>
       </section>
     </main>
 
     <footer>
-      <p>Built with ❤️ • <a href="#">salimiqbal26.github.io/Portfolio</a></p>
+      <p>Built with ❤️ • <a href="https://salimiqbal26.github.io/Portfolio/" target="_blank" rel="noopener">salimiqbal26.github.io/Portfolio</a></p>
     </footer>
   </div>
 
@@ -211,12 +184,13 @@ Passionate about exploring new technologies and collaborating on innovative proj
         const href = a.getAttribute('href');
         if(href.length>1){
           e.preventDefault();
-          document.querySelector(href).scrollIntoView({behavior:'smooth'});
+          const el = document.querySelector(href);
+          if(el) el.scrollIntoView({behavior:'smooth'});
         }
       });
     });
 
-    // Simple form submit UX: show a success message (if using Formspree, it will redirect or accept)
+    // Simple form submit UX
     const form = document.getElementById('contact-form');
     form.addEventListener('submit', (e)=>{
       const btn = form.querySelector('button[type=submit]');
